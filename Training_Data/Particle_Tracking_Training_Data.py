@@ -75,9 +75,9 @@ class Particle_Tracking_Training_Data(tf.Module):
     def _sample_motion(self, Nparticles, sigma_motion):
         #### boundaries
         b_lower = tf.constant(
-            [-10, -10, -30.], tf.float32)
+            [10, 10, -30.], tf.float32)
         b_upper = tf.constant(
-            [self.Nx+10, self.Ny+10, 30.], tf.float32)
+            [self.Nx-10, self.Ny-10, 30.], tf.float32)
         #### uniform random initial possitions
         U = tf.random.uniform(
             [1, Nparticles, self.d],
