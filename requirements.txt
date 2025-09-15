@@ -1,0 +1,14 @@
+# Core ML stack
+# Note: On Apple Silicon, prefer installing tensorflow-macos + tensorflow-metal (see README)
+tensorflow>=2.15,<3.0
+
+# Numerics & scientific
+numpy>=1.24,<3
+scipy>=1.10
+
+# Visualization & notebooks
+matplotlib>=3.7
+ipywidgets>=8.0
+
+# Utilities
+tqdm>=4.65
